@@ -21,7 +21,7 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
         "[data-counter]",
         { innerText: 0 },
         {
-          innerText: 200,
+          innerText: 24,
           duration: 1.2,
           ease: "power2.out",
           snap: { innerText: 1 },
@@ -38,67 +38,45 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
       ref={root}
       className="relative min-h-[100vh] overflow-hidden bg-firo-bg text-firo-text"
     >
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster="/video/firo-hero-poster.jpg"
-      >
-        <source src="/video/firo-hero.webm" type="video/webm" />
-        <source src="/video/firo-hero.mp4" type="video/mp4" />
-      </video>
-
-      <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/78 to-firo-bg/98" />
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(to bottom, rgba(255,255,255,.9) 0, rgba(255,255,255,.9) 1px, transparent 2px, transparent 7px)",
-        }}
-      />
-
       <Container>
-        <div className="relative z-10 flex min-h-[100vh] items-center py-16">
+        <div className="relative z-10 flex min-h-[100vh] items-center py-24 md:py-28">
           <div className="max-w-2xl">
-            <div className="mb-4 flex items-center gap-2 text-xs text-firo-text">
+            <div className="mb-5 flex items-center gap-2 text-xs text-firo-text">
               <a
                 href="/"
-                className={`rounded-md px-2 py-1 hover:text-firo-text ${
-                  !isEs ? "bg-[#5CA1F3]/20 text-firo-text" : ""
+                className={`tabular rounded-md border border-firo-line px-2.5 py-1 hover:text-firo-text ${
+                  !isEs ? "border-[#435C3D] bg-white/70 text-firo-text" : ""
                 }`}
               >
                 EN
               </a>
               <a
                 href="/es"
-                className={`rounded-md px-2 py-1 hover:text-firo-text ${
-                  isEs ? "bg-[#5CA1F3]/20 text-firo-text" : ""
+                className={`tabular rounded-md border border-firo-line px-2.5 py-1 hover:text-firo-text ${
+                  isEs ? "border-[#435C3D] bg-white/70 text-firo-text" : ""
                 }`}
               >
                 ES
               </a>
             </div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-firo-line bg-black/70 px-4 py-2 text-sm text-firo-text">
-              <span className="h-2 w-2 rounded-full bg-[#38F9A5]" />
-              {isEs ? "PeakU + Comunidad tech LatAm Mana Tech (base Miami)" : "PeakU + Mana Tech LatAm tech community (Miami-based)"}
+            <div className="inline-flex items-center gap-2 rounded-full border border-firo-line bg-white/70 px-4 py-2 text-sm text-firo-text">
+              <span className="h-2 w-2 rounded-full bg-[#435C3D]" />
+              {isEs ? "Coworking en Manizales" : "Coworking in Manizales"}
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight md:text-6xl">
               {isEs ? (
                 <>
-                  Publica tu vacante desde Mana Tech y recibe
-                  <span className="text-[#38F9A5] drop-shadow-[0_0_22px_rgba(56,249,165,.45)]">
-                    {" "}talento especializado de alto nivel.
+                  Trabaja, crea y conecta en
+                  <span className="text-[#A7683D]">
+                    {" "}Vittiva Coworking.
                   </span>
                 </>
               ) : (
                 <>
-                  Stop hiring blind. Launch your opening through Mana Tech and get
-                  <span className="text-[#38F9A5] drop-shadow-[0_0_22px_rgba(56,249,165,.45)]">
-                    {" "}specialized LatAm talent that moves the needle.
+                  Work, create, and connect at
+                  <span className="text-[#A7683D]">
+                    {" "}Vittiva Coworking.
                   </span>
                 </>
               )}
@@ -106,31 +84,37 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-firo-muted md:text-lg">
               {isEs
-                ? "PeakU conecta a empresas de Mana Tech con talento especializado en LatAm, desde desarrolladores de software hasta ejecutivos comerciales bilingues, con mejor filtrado y reportes por candidato."
-                : "PeakU gives Mana Tech companies privileged access to specialized LatAm talent, from software developers to bilingual sales executives, with stronger screening and decision-ready candidate reports."}
+                ? "Un espacio flexible en Manizales para freelancers, equipos y emprendedores. Oficinas compartidas, salas de reuniones y una comunidad que impulsa tu crecimiento."
+                : "A flexible space in Manizales for freelancers, teams, and founders. Shared workspaces, meeting rooms, and a community that helps your projects grow."}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#join"
-                className="rounded-xl bg-[#38F9A5] px-5 py-3 text-sm font-semibold text-black shadow-soft transition hover:brightness-95"
+                className="tabular rounded-lg bg-[#435C3D] px-5 py-3 text-sm font-semibold text-[#F0EEDF] shadow-soft transition hover:brightness-95"
               >
-                {isEs ? "Publicar oferta en PeakU" : "Launch your opening on PeakU"}
+                {isEs ? "Agenda tu visita" : "Book a tour"}
+              </a>
+              <a
+                href="#beneficios"
+                className="tabular rounded-lg border border-[#435C3D] px-5 py-3 text-sm font-semibold text-[#435C3D] transition hover:bg-white/70"
+              >
+                {isEs ? "Conocer espacios" : "Explore spaces"}
               </a>
             </div>
 
-            <div className="mt-8 grid max-w-2xl grid-cols-1 gap-3 text-sm md:grid-cols-3">
-              <div className="rounded-xl border border-firo-line bg-[#0B0B0B]/90 p-3">
-                <div className="text-firo-muted">{isEs ? "Aplicaciones por vacante" : "Applications per opening"}</div>
-                <div className="mt-1 text-xl font-semibold text-firo-text">+<span data-counter>0</span></div>
+            <div className="mt-10 grid max-w-2xl grid-cols-1 gap-4 text-sm md:grid-cols-3">
+              <div className="rounded-lg border border-firo-line bg-[#F6F4E8] p-4 shadow-soft">
+                <div className="text-firo-muted">{isEs ? "Puestos de trabajo" : "Work stations"}</div>
+                <div className="tabular mt-1 text-xl font-semibold text-firo-text">+<span data-counter>0</span></div>
               </div>
-              <div className="rounded-xl border border-firo-line bg-[#0B0B0B]/90 p-3">
-                <div className="text-firo-muted">{isEs ? "Base de talento" : "Talent network"}</div>
-                <div className="mt-1 text-xl font-semibold text-[#5CA1F3]">{isEs ? "Especializado" : "Specialized"}</div>
+              <div className="rounded-lg border border-firo-line bg-[#F6F4E8] p-4 shadow-soft">
+                <div className="text-firo-muted">{isEs ? "Salas de reunión" : "Meeting rooms"}</div>
+                <div className="mt-1 text-xl font-semibold text-[#435C3D]">{isEs ? "Equipadas" : "Fully equipped"}</div>
               </div>
-              <div className="rounded-xl border border-firo-line bg-[#0B0B0B]/90 p-3">
-                <div className="text-firo-muted">{isEs ? "Seleccion guiada" : "Screening quality"}</div>
-                <div className="mt-1 text-xl font-semibold text-[#38F9A5]">{isEs ? "Pruebas + reporte" : "Assessments + reports"}</div>
+              <div className="rounded-lg border border-firo-line bg-[#F6F4E8] p-4 shadow-soft">
+                <div className="text-firo-muted">{isEs ? "Comunidad" : "Community"}</div>
+                <div className="mt-1 text-xl font-semibold text-[#A7683D]">{isEs ? "Networking y eventos" : "Networking and events"}</div>
               </div>
             </div>
           </div>

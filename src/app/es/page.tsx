@@ -8,24 +8,24 @@ import Rewards from "@/components/sections/Rewards";
 import Join from "@/components/sections/Join";
 
 export const metadata: Metadata = {
-  title: "Mana Tech x PeakU | Contrata talento especializado en LatAm",
+  title: "Vittiva Coworking Manizales | Espacios de trabajo flexibles",
   description:
-    "Ruta exclusiva para la comunidad tech LatAm de Mana Tech, con base en Miami: encuentra talento especializado como desarrolladores de software y ejecutivos comerciales bilingues, con mejor filtrado y decisiones mas claras.",
+    "Vittiva Coworking en Manizales ofrece espacios de trabajo flexibles, salas de reuniones y una comunidad activa para freelancers, emprendedores y equipos.",
   alternates: {
     canonical: "/es",
   },
   openGraph: {
     locale: "es_ES",
-    title: "Mana Tech x PeakU | Acceso exclusivo a talento especializado",
+    title: "Vittiva Coworking Manizales",
     description:
-      "Publica vacantes desde la comunidad tech LatAm de Mana Tech (base Miami) y conecta con talento especializado, incluyendo developers de software y ejecutivos comerciales bilingues, con reportes por candidato.",
+      "Conoce Vittiva Coworking en Manizales: espacios cómodos, internet de alta velocidad y comunidad para crecer.",
     url: "/es",
     images: [
       {
         url: "/assets/hero/dashboard.png",
         width: 1200,
         height: 800,
-        alt: "Dashboard PeakU para respaldo de decisiones de seleccion",
+        alt: "Vittiva Coworking en Manizales",
       },
     ],
   },

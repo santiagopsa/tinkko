@@ -2,28 +2,34 @@
 @config "../../tailwind.config.js";
 
 @theme {
-  --color-firo-navy: #5ca1f3;
-  --color-firo-blue: #5ca1f3;
-  --color-firo-violet: #38f9a5;
-  --color-firo-bg: #000000;
-  --color-firo-text: #f5f7fa;
-  --color-firo-muted: #a7b0be;
-  --color-firo-line: #1f2a38;
-  --color-firo-success: #38f9a5;
-  --color-firo-warn: #5ca1f3;
-  --shadow-soft: 0 14px 36px rgba(92, 161, 243, 0.18);
+  --color-firo-navy: #435c3d;
+  --color-firo-blue: #435c3d;
+  --color-firo-violet: #a7683d;
+  --color-firo-bg: #f0eedf;
+  --color-firo-text: #2f3b2b;
+  --color-firo-muted: #6f7878;
+  --color-firo-line: #cdd4d4;
+  --color-firo-success: #435c3d;
+  --color-firo-warn: #a7683d;
+  --shadow-soft: 0 8px 24px rgba(47, 59, 43, 0.08);
 }
 
 :root{
-  --bg:#000000;
-  --text:#F5F7FA;
+  --bg:#F0EEDF;
+  --text:#2F3B2B;
+  --accent:#A7683D;
+  --line:#CDD4D4;
+  /* Degular is not bundled in this repo; this maps brand intent to existing fonts. */
+  --font-degular: var(--font-space-grotesk);
+  --font-tabular: var(--font-inter);
 }
 
 html, body { height: 100%; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: var(--font-degular), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 input[type="range"] {
@@ -31,5 +37,11 @@ input[type="range"] {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: var(--font-degular), var(--font-inter), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+label, button, input, .tabular {
+  font-family: var(--font-tabular), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
 }

@@ -36,35 +36,35 @@ export default function Lore({ locale = "en" }: LoreProps) {
   }, []);
 
   return (
-    <section ref={root} id="beneficios" className="bg-firo-bg py-24 text-firo-text">
+    <section ref={root} id="beneficios" className="bg-firo-bg py-28 text-firo-text">
       <Container>
-        <div className="max-w-3xl">
-          <div data-reveal className="text-sm font-semibold text-[#38F9A5]">
-            {isEs ? "Beneficios para la comunidad Mana Tech" : "Benefits for Mana Tech community"}
+        <div className="max-w-4xl">
+          <div data-reveal className="tabular text-sm font-semibold text-[#435C3D]">
+            {isEs ? "Beneficios de Vittiva" : "Vittiva benefits"}
           </div>
           <h2 data-reveal className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
             {isEs
-              ? "Publica una vacante con ventaja real desde tu comunidad tech."
-              : "Post openings with a real hiring edge."}
+              ? "Todo lo que necesitas para trabajar comodo y enfocado."
+              : "Everything you need to work comfortably and stay focused."}
           </h2>
           <p data-reveal className="mt-4 text-firo-muted">
             {isEs
-              ? "Mana Tech ofrece acceso exclusivo a PeakU para atraer talento especializado en LatAm, incluyendo developers de software y ejecutivos comerciales bilingues."
-              : "Mana Tech companies get an exclusive lane into PeakU to hire specialized LatAm talent, including software developers and bilingual sales executives."}
+              ? "En Vittiva Coworking, en Manizales, encuentras espacios funcionales, internet estable y un ambiente profesional para impulsar tus proyectos."
+              : "At Vittiva Coworking in Manizales, you get functional spaces, reliable internet, and a professional environment that helps projects move forward."}
           </p>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
             <Card
-              title={isEs ? "Acceso a talento especializado" : "Specialized talent, at scale"}
-              desc={isEs ? "Conecta con talento especializado en LatAm para posiciones criticas de tecnologia y crecimiento." : "Connect with specialized LatAm talent for critical tech and revenue positions."}
+              title={isEs ? "Espacios flexibles" : "Flexible spaces"}
+              desc={isEs ? "Elige entre puestos por día, planes mensuales y salas privadas según tu ritmo de trabajo." : "Choose daily passes, monthly plans, and private rooms based on your work style."}
             />
             <Card
-              title={isEs ? "Mas de 200 aplicaciones" : "200+ applications per opening"}
-              desc={isEs ? "Cada publicacion recibe alto volumen para elegir entre los mejores perfiles." : "Build serious pipeline fast without sacrificing candidate quality."}
+              title={isEs ? "Ubicación estratégica" : "Strategic location"}
+              desc={isEs ? "Estamos en Manizales con acceso fácil, cerca de servicios y zonas comerciales." : "Located in Manizales with easy access and close to key city services."}
             />
             <Card
-              title={isEs ? "Evaluacion guiada" : "Signal-rich evaluation"}
-              desc={isEs ? "Aplicamos pruebas tecnicas y de personalidad para filtrar con criterio objetivo." : "Use technical and behavioral assessments to shortlist with objective signal."}
+              title={isEs ? "Comunidad activa" : "Active community"}
+              desc={isEs ? "Conecta con otros profesionales, emprendedores y equipos en eventos y espacios compartidos." : "Connect with professionals, founders, and teams through events and shared spaces."}
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Lore({ locale = "en" }: LoreProps) {
 
 function Card({ title, desc }: { title: string; desc: string }) {
   return (
-    <div data-reveal className="rounded-2xl border border-firo-line bg-[#0B0B0B] p-5">
+    <div data-reveal className="rounded-lg border border-[#CDD4D4] bg-[#F6F4E8] p-6 shadow-soft">
       <div className="font-semibold">{title}</div>
       <div className="mt-2 text-sm text-firo-muted">{desc}</div>
     </div>

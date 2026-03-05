@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FIRO | Activos Roboticos, Retorno Real",
+  title: "Vittiva Coworking | Manizales",
   description:
-    "FIRO convierte robots humanoides en activos productivos. Invierte en una unidad, FIRO opera el despliegue y tu sigues utilizacion, uptime y pagos.",
+    "Espacios de coworking en Manizales con planes flexibles, salas de reuniones y comunidad para impulsar tus proyectos.",
   alternates: {
     canonical: "/es",
     languages: {
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "es_ES",
     url: "/es",
-    title: "FIRO | Activos Roboticos, Retorno Real",
+    title: "Vittiva Coworking | Manizales",
     description:
-      "Invierte en activos roboticos con operacion gestionada y visibilidad de pagos.",
+      "Coworking en Manizales con espacios cómodos, internet rápido y comunidad activa.",
   },
 };
 

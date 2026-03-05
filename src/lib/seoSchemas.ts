@@ -2,11 +2,11 @@ export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "FIRO",
-    url: "https://www.firoassets.com",
-    logo: "https://www.firoassets.com/favicon.png",
+    name: "Vittiva Coworking",
+    url: "https://www.vittivacoworking.com",
+    logo: "https://www.vittivacoworking.com/favicon.png",
     sameAs: [
-      "https://github.com/santiagopsa/firo",
+      "https://www.instagram.com",
     ],
   };
 }
@@ -15,8 +15,8 @@ export function getWebsiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "FIRO",
-    url: "https://www.firoassets.com",
+    name: "Vittiva Coworking",
+    url: "https://www.vittivacoworking.com",
     inLanguage: ["en", "es"],
   };
 }
@@ -55,18 +55,18 @@ export function getArticleSchema(params: {
     mainEntityOfPage: params.url,
     datePublished: params.datePublished,
     dateModified: params.dateModified ?? params.datePublished,
-    image: params.image ?? "https://www.firoassets.com/assets/hero/dashboard.png",
+    image: params.image ?? "https://www.vittivacoworking.com/assets/hero/dashboard.png",
     inLanguage: params.language ?? "en",
     author: {
       "@type": "Organization",
-      name: "FIRO",
+      name: "Vittiva Coworking",
     },
     publisher: {
       "@type": "Organization",
-      name: "FIRO",
+      name: "Vittiva Coworking",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.firoassets.com/favicon.png",
+        url: "https://www.vittivacoworking.com/favicon.png",
       },
     },
   };

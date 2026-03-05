@@ -7,31 +7,31 @@ type JoinProps = {
 export default function Join({ locale = "en" }: JoinProps) {
   const isEs = locale === "es";
   return (
-    <section id="join" className="bg-firo-bg py-24">
+    <section id="join" className="bg-firo-bg py-28">
       <Container>
-        <div className="rounded-3xl border border-firo-line bg-firo-bg p-8 shadow-soft md:p-10">
+        <div className="rounded-xl border border-[#CDD4D4] bg-[#F6F4E8] p-8 shadow-soft md:p-10">
           <div className="grid gap-8 md:grid-cols-2 md:items-start">
             <div>
-              <div className="text-sm font-semibold text-[#38F9A5]">{isEs ? "Publica tu vacante" : "Start your hiring search"}</div>
+              <div className="tabular text-sm font-semibold text-[#435C3D]">{isEs ? "Reserva tu espacio" : "Book your workspace"}</div>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
                 {isEs
-                  ? "Acceso exclusivo para empresas de Mana Tech"
-                  : "Exclusive hiring access for Mana Tech companies"}
+                  ? "Únete a Vittiva Coworking en Manizales"
+                  : "Join Vittiva Coworking in Manizales"}
               </h2>
               <p className="mt-3 text-firo-muted">
                 {isEs
-                  ? "Completa este formulario y nuestro equipo te contacta para activar tu publicacion, pruebas de filtrado y reportes por candidato."
-                  : "Fill out the form and our team will activate your opening to reach specialized LatAm talent, including software developers and bilingual sales executives."}
+                  ? "Completa el formulario y te contactamos para recomendarte el plan ideal y agendar tu visita."
+                  : "Fill out the form and we will contact you to recommend the best plan and schedule your tour."}
               </p>
             </div>
 
-            <div className="rounded-2xl border border-firo-line bg-[#0B0B0B] p-6 shadow-soft">
+            <div className="rounded-lg border border-[#CDD4D4] bg-[#F0EEDF] p-6 shadow-soft">
               <form
                 action="https://formsubmit.co/santiagopsa@gmail.com"
                 method="POST"
                 className="space-y-4"
               >
-                <input type="hidden" name="_subject" value="Mana Tech - solicitud para publicar vacante" />
+                <input type="hidden" name="_subject" value="Vittiva Coworking - solicitud de información" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
 
@@ -43,7 +43,7 @@ export default function Join({ locale = "en" }: JoinProps) {
                     id="name"
                     name="name"
                     required
-                    className="w-full rounded-xl border border-firo-line bg-[#111111] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#38F9A5]"
+                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
                     placeholder={isEs ? "Tu nombre completo" : "Your full name"}
                   />
                 </div>
@@ -56,8 +56,8 @@ export default function Join({ locale = "en" }: JoinProps) {
                     id="company"
                     name="company"
                     required
-                    className="w-full rounded-xl border border-firo-line bg-[#111111] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#38F9A5]"
-                    placeholder={isEs ? "Nombre de tu empresa" : "Your company name"}
+                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
+                    placeholder={isEs ? "Nombre de tu empresa o proyecto" : "Your company or project name"}
                   />
                 </div>
 
@@ -70,29 +70,29 @@ export default function Join({ locale = "en" }: JoinProps) {
                     name="email"
                     type="email"
                     required
-                    className="w-full rounded-xl border border-firo-line bg-[#111111] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#38F9A5]"
+                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
                     placeholder={isEs ? "tu@email.com" : "you@email.com"}
                   />
                 </div>
 
                 <div>
                   <label className="mb-1 block text-sm font-medium text-firo-text" htmlFor="vacancy">
-                    {isEs ? "Cargo a publicar" : "Opening to publish"}
+                    {isEs ? "Plan de interés" : "Preferred plan"}
                   </label>
                   <input
                     id="vacancy"
                     name="vacancy"
                     required
-                    className="w-full rounded-xl border border-firo-line bg-[#111111] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#38F9A5]"
-                    placeholder={isEs ? "Ej: Desarrollador Full Stack" : "Ex: Full Stack Developer"}
+                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
+                    placeholder={isEs ? "Ej: Plan mensual cowork" : "Ex: Monthly cowork plan"}
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-[#38F9A5] px-5 py-3 text-sm font-semibold text-black transition hover:brightness-95"
+                  className="tabular w-full rounded-md bg-[#435C3D] px-5 py-3 text-sm font-semibold text-[#F0EEDF] transition hover:brightness-95"
                 >
-                  {isEs ? "Publicar oferta en PeakU" : "Launch your opening on PeakU"}
+                  {isEs ? "Solicitar información" : "Request information"}
                 </button>
               </form>
             </div>
@@ -100,8 +100,8 @@ export default function Join({ locale = "en" }: JoinProps) {
 
           <div className="mt-6 text-xs text-firo-muted">
             {isEs
-              ? "Te contactamos para validar tu perfil de empresa y activar la ruta exclusiva de publicacion en PeakU."
-              : "We'll contact you to verify your company profile and unlock your exclusive flow for specialized LatAm hiring in PeakU."}
+              ? "Nuestro equipo te responderá para confirmar disponibilidad, tarifas y beneficios."
+              : "Our team will reply with availability, pricing, and membership benefits."}
           </div>
         </div>
       </Container>

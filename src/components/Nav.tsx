@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 type NavProps = {
@@ -27,36 +26,31 @@ export default function Nav({ locale = "en" }: NavProps) {
   const joinHref = anchorHref("join");
 
   return (
-    <div className="fixed inset-x-0 top-0 z-50 border-b border-firo-line bg-black/80 text-firo-text backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
+    <div className="fixed inset-x-0 top-0 z-50 border-b border-firo-line bg-[#F0EEDF]/92 text-firo-text backdrop-blur-xl">
+      <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-6 md:px-10">
         <a href={homeHref} className="inline-flex items-center" aria-label="Go to main page">
-          <Image
-            src="/assets/brand/firo-logo.png"
-            alt="PeakU"
-            width={150}
-            height={45}
-            priority
-            className="h-8 w-auto md:h-9"
-          />
+          <span className="text-base font-semibold tracking-tight md:text-lg">
+            Vittiva Coworking
+          </span>
         </a>
 
         <nav className="hidden items-center gap-7 text-sm text-firo-muted md:flex">
-          <a href={benefitsHref} className="hover:text-[#38F9A5]">{isEs ? "Beneficios" : "Benefits"}</a>
-          <a href={processHref} className="hover:text-[#5CA1F3]">{isEs ? "Proceso" : "Process"}</a>
+          <a href={benefitsHref} className="hover:text-[#435C3D]">{isEs ? "Beneficios" : "Benefits"}</a>
+          <a href={processHref} className="hover:text-[#435C3D]">{isEs ? "Proceso" : "Process"}</a>
         </nav>
 
         <div className="flex items-center gap-2">
           <a
             href={switchHref}
-            className="rounded-lg px-2 py-1 text-xs text-firo-muted hover:text-firo-text"
+            className="tabular rounded-lg border border-firo-line px-2.5 py-1 text-xs text-firo-muted hover:border-[#435C3D] hover:text-firo-text"
           >
             {isEs ? "EN" : "ES"}
           </a>
           <a
             href={joinHref}
-            className="rounded-xl bg-[#38F9A5] px-3 py-2 text-sm font-semibold text-black transition hover:brightness-95 md:px-4"
+            className="tabular rounded-lg bg-[#435C3D] px-3.5 py-2 text-sm font-semibold text-[#F0EEDF] transition hover:brightness-95 md:px-4"
           >
-            {isEs ? "Publicar oferta en PeakU" : "Start hiring on PeakU"}
+            {isEs ? "Agenda tu visita" : "Book a tour"}
           </a>
         </div>
       </div>

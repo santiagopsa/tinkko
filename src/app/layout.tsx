@@ -13,26 +13,24 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.firoassets.com"),
+  metadataBase: new URL("https://www.vittivacoworking.com"),
   title: {
-    default: "FIRO | Robotic Assets, Real Yield",
-    template: "%s | FIRO",
+    default: "Vittiva Coworking Manizales",
+    template: "%s | Vittiva Coworking",
   },
   description:
-    "FIRO turns humanoid robots into yield-generating assets. Own the unit, FIRO runs ops, and track utilization, uptime, and payouts in one dashboard.",
+    "Espacios de coworking en Manizales con planes flexibles, salas de reuniones y comunidad para impulsar tus proyectos.",
   keywords: [
-    "FIRO",
-    "robotic assets",
-    "robot investment",
-    "humanoid robots",
-    "robotics yield",
-    "events robotics",
-    "robot ROI",
-    "automation",
+    "Vittiva Coworking",
+    "coworking Manizales",
+    "oficinas compartidas",
+    "salas de reuniones Manizales",
+    "espacios de trabajo flexibles",
+    "coworking Colombia",
   ],
-  authors: [{ name: "FIRO", url: "https://www.firoassets.com" }],
-  creator: "FIRO",
-  publisher: "FIRO",
+  authors: [{ name: "Vittiva Coworking", url: "https://www.vittivacoworking.com" }],
+  creator: "Vittiva Coworking",
+  publisher: "Vittiva Coworking",
   alternates: {
     canonical: "/",
     languages: {
@@ -60,27 +58,27 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "FIRO",
-    title: "FIRO | Robotic Assets, Real Yield",
+    siteName: "Vittiva Coworking",
+    title: "Vittiva Coworking Manizales",
     description:
-      "Own or finance a robot. FIRO operates deployment and tracks utilization, uptime, and payouts.",
+      "Coworking en Manizales con espacios cómodos, conectividad y comunidad profesional.",
     images: [
       {
         url: "/assets/hero/dashboard.png",
         width: 1200,
         height: 800,
-        alt: "FIRO dashboard preview",
+        alt: "Vittiva Coworking Manizales",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FIRO | Robotic Assets, Real Yield",
+    title: "Vittiva Coworking Manizales",
     description:
-      "FIRO converts humanoid robots into measurable, managed, yield-generating assets.",
+      "Espacios de coworking en Manizales para freelancers, emprendedores y equipos.",
     images: ["/assets/hero/dashboard.png"],
   },
-  category: "technology",
+  category: "business",
 };
 
 export default function RootLayout({

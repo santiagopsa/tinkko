@@ -5,16 +5,16 @@ import Container from "../ui/Container";
 import { ensureGsap } from "@/lib/gsap";
 
 const cards = [
-  { title: "Complete candidate intelligence", desc: "Every finalist profile includes technical outcomes, behavioral insights, and a hiring recommendation." },
-  { title: "Faster shortlisting", desc: "Assessment-backed filtering keeps your team focused on high-fit candidates only." },
-  { title: "Higher decision confidence", desc: "Hiring managers get objective signal, not just resumes and gut feeling." },
-  { title: "Exclusive community advantage", desc: "Mana Tech companies publish through a differentiated channel to attract specialized LatAm talent." },
+  { title: "Natural and productive environment", desc: "Warm lighting, comfortable furniture, and calm spaces to maintain deep focus." },
+  { title: "Reliable connectivity", desc: "Stable high-speed internet for calls, remote work, and daily collaboration." },
+  { title: "Professional meeting spaces", desc: "Host clients and teams in rooms prepared for presentations and strategic sessions." },
+  { title: "Community that supports growth", desc: "Share ideas, opportunities, and partnerships with people building in Manizales." },
 ];
 const cardsEs = [
-  { title: "Reporte completo por candidato", desc: "Cada perfil preseleccionado incluye resultados tecnicos, rasgos de personalidad y recomendacion." },
-  { title: "Preseleccion mas rapida", desc: "El filtrado con evaluaciones permite enfocar entrevistas en perfiles de mayor ajuste." },
-  { title: "Decisiones con mas certeza", desc: "Los lideres reciben evidencia objetiva para decidir con seguridad." },
-  { title: "Ventaja exclusiva para Mana Tech", desc: "Las empresas de la comunidad Mana Tech publican en un canal diferenciado para atraer mejor talento." },
+  { title: "Ambiente natural y productivo", desc: "Iluminación cálida, mobiliario cómodo y espacios tranquilos para enfocarte mejor." },
+  { title: "Conectividad confiable", desc: "Internet de alta velocidad y estabilidad para reuniones y trabajo remoto diario." },
+  { title: "Salas profesionales", desc: "Recibe clientes y equipos en espacios listos para presentaciones y sesiones estratégicas." },
+  { title: "Comunidad que impulsa", desc: "Comparte ideas, oportunidades y alianzas con personas que construyen en Manizales." },
 ];
 
 type StickySwapProps = {
@@ -54,27 +54,27 @@ export default function StickySwap({ locale = "en" }: StickySwapProps) {
   }, []);
 
   return (
-    <section ref={root} className="relative bg-firo-bg py-24">
+    <section ref={root} className="relative bg-firo-bg py-28">
       <Container>
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-12 md:grid-cols-2">
           <div className="md:sticky md:top-24 md:h-fit">
-            <div className="text-sm font-semibold text-[#38F9A5]">{isEs ? "Resultados esperados" : "Expected outcomes"}</div>
+            <div className="tabular text-sm font-semibold text-[#435C3D]">{isEs ? "Resultados esperados" : "Expected outcomes"}</div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-              {isEs ? "Lo que obtiene tu equipo al publicar con PeakU desde Mana Tech" : "What your team unlocks with PeakU through Mana Tech"}
+              {isEs ? "Lo que obtienes al elegir Vittiva Coworking" : "What you get at Vittiva Coworking"}
             </h2>
             <p className="mt-4 max-w-lg text-firo-muted">
               {isEs
-                ? "No es solo volumen de postulaciones. Es calidad de filtro y claridad para tomar decisiones de contratacion."
-                : "This is not just more applicants. It is better screening and decision-ready evidence for specialized LatAm hiring."}
+                ? "Más que un escritorio: un lugar pensado para producir, conectar y hacer crecer tus proyectos."
+                : "More than a desk: a place built to produce, connect, and grow your projects."}
             </p>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-5">
             {cardsToRender.map((c) => (
               <div
                 key={c.title}
                 data-swap-item
-                className="rounded-2xl border border-firo-line bg-[#0B0B0B] p-6 shadow-soft"
+                className="rounded-lg border border-[#CDD4D4] bg-[#F6F4E8] p-6 shadow-soft"
               >
                 <div className="text-lg font-semibold">{c.title}</div>
                 <div className="mt-2 text-firo-muted">{c.desc}</div>
