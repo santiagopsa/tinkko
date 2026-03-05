@@ -38,6 +38,20 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
       ref={root}
       className="relative min-h-[100vh] overflow-hidden bg-firo-bg text-firo-text"
     >
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/assets/hero/dashboard.png"
+      >
+        <source src="/video/firo-hero.mp4" type="video/mp4" />
+      </video>
+      <div className="pointer-events-none absolute inset-0 bg-[#F0EEDF]/76" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#F0EEDF]/88 via-[#F0EEDF]/72 to-[#F0EEDF]/90" />
+
       <Container>
         <div className="relative z-10 flex min-h-[100vh] items-center py-24 md:py-28">
           <div className="max-w-2xl">
