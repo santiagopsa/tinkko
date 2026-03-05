@@ -20,8 +20,8 @@ export default function Join({ locale = "en" }: JoinProps) {
               </h2>
               <p className="mt-3 text-firo-muted">
                 {isEs
-                  ? "Completa este formulario y nuestro equipo activará tu ruta de publicación para atraer talento especializado."
-                  : "Fill out the form and our team will activate your publishing flow to reach specialized talent."}
+                  ? "Completa el formulario y creamos un grupo de WhatsApp para publicar tu vacante y acompañarte en el proceso."
+                  : "Fill out the form and we create a WhatsApp group to publish your opening and guide your process."}
               </p>
             </div>
 
@@ -31,7 +31,7 @@ export default function Join({ locale = "en" }: JoinProps) {
                 method="POST"
                 className="space-y-4"
               >
-                <input type="hidden" name="_subject" value="Vittiva + PeakU - solicitud para publicar vacante" />
+                <input type="hidden" name="_subject" value="Vittiva + PeakU - crear grupo de WhatsApp para vacante" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
 
@@ -49,42 +49,16 @@ export default function Join({ locale = "en" }: JoinProps) {
                 </div>
 
                 <div>
-                  <label className="mb-1 block text-sm font-medium text-firo-text" htmlFor="company">
-                    {isEs ? "Empresa" : "Company"}
+                  <label className="mb-1 block text-sm font-medium text-firo-text" htmlFor="whatsapp">
+                    {isEs ? "WhatsApp" : "WhatsApp"}
                   </label>
                   <input
-                    id="company"
-                    name="company"
+                    id="whatsapp"
+                    name="whatsapp"
+                    type="tel"
                     required
                     className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
-                    placeholder={isEs ? "Nombre de tu empresa o proyecto" : "Your company or project name"}
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-1 block text-sm font-medium text-firo-text" htmlFor="email">
-                    {isEs ? "Correo electronico" : "Email"}
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
-                    placeholder={isEs ? "tu@email.com" : "you@email.com"}
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-1 block text-sm font-medium text-firo-text" htmlFor="vacancy">
-                    {isEs ? "Cargo a publicar" : "Opening to publish"}
-                  </label>
-                  <input
-                    id="vacancy"
-                    name="vacancy"
-                    required
-                    className="tabular w-full rounded-md border border-[#CDD4D4] bg-[#F6F4E8] px-4 py-3 text-sm text-firo-text outline-none focus:border-[#435C3D]"
-                    placeholder={isEs ? "Ej: Desarrollador Full Stack" : "Ex: Full Stack Developer"}
+                    placeholder={isEs ? "Ej: +57 300 123 4567" : "Ex: +57 300 123 4567"}
                   />
                 </div>
 
@@ -92,7 +66,7 @@ export default function Join({ locale = "en" }: JoinProps) {
                   type="submit"
                   className="tabular w-full rounded-md bg-[#435C3D] px-5 py-3 text-sm font-semibold text-[#F0EEDF] transition hover:brightness-95"
                 >
-                  {isEs ? "Publicar oferta en PeakU" : "Launch your opening on PeakU"}
+                  {isEs ? "Crear grupo de WhatsApp" : "Create WhatsApp group"}
                 </button>
               </form>
             </div>
@@ -100,8 +74,8 @@ export default function Join({ locale = "en" }: JoinProps) {
 
           <div className="mt-6 text-xs text-firo-muted">
             {isEs
-              ? "Te contactamos para validar tu perfil y activar la ruta exclusiva de publicación en PeakU."
-              : "We will contact you to validate your profile and activate your exclusive publishing lane in PeakU."}
+              ? "Con estos datos te escribimos y abrimos el grupo de WhatsApp para publicar tu vacante."
+              : "With this info, we message you and open the WhatsApp group to publish your opening."}
           </div>
         </div>
       </Container>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 type NavProps = {
@@ -39,7 +40,17 @@ export default function Nav({ locale = "en" }: NavProps) {
           <a href={processHref} className="hover:text-[#435C3D]">{isEs ? "Proceso" : "Process"}</a>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <a href={homeHref} className="inline-flex items-center" aria-label="Vittiva logo">
+            <Image
+              src="/assets/brand/firo-logo.png"
+              alt="Vittiva Coworking logo"
+              width={120}
+              height={36}
+              className="h-8 w-auto"
+              priority
+            />
+          </a>
           <a
             href={switchHref}
             className="tabular rounded-lg border border-firo-line px-2.5 py-1 text-xs text-firo-muted hover:border-[#435C3D] hover:text-firo-text"
