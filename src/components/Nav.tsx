@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 type NavProps = {
@@ -30,13 +29,12 @@ export default function Nav({ locale = "en" }: NavProps) {
     <div className="fixed inset-x-0 top-0 z-50 border-b border-[#E5E7EB] bg-white/92 text-black backdrop-blur-xl">
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-6 md:px-10">
         <a href={homeHref} className="inline-flex items-center" aria-label="Go to main page">
-          <Image
+          <img
             src="/assets/brand/descarga.png"
             alt="Tinkko Coworking logo"
             width={132}
             height={40}
             className="h-8 w-auto"
-            priority
           />
         </a>
 
