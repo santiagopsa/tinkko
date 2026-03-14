@@ -31,7 +31,7 @@ export default function Nav({ locale = "en" }: NavProps) {
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-6 md:px-10">
         <a href={homeHref} className="inline-flex items-center" aria-label="Go to main page">
           <Image
-            src="/assets/brand/firo-logo.png"
+            src="/assets/brand/descarga.png"
             alt="Tinkko Coworking logo"
             width={132}
             height={40}
