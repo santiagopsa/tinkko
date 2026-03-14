@@ -60,7 +60,7 @@ export default function Lore({ locale = "en" }: LoreProps) {
             />
             <Card
               title={isEs ? "Más volumen con calidad" : "More volume with quality"}
-              desc={isEs ? "Atrae más aplicaciones por vacante sin perder foco en candidatos de alto ajuste." : "Attract stronger application flow per opening without sacrificing candidate fit."}
+              desc={isEs ? "Atrae más de 250 aplicaciones por vacante sin perder foco en candidatos de alto ajuste." : "Attract over 250 applications per opening without sacrificing candidate fit."}
             />
             <Card
               title={isEs ? "Evaluación con señal real" : "Signal-rich evaluation"}

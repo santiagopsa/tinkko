@@ -120,7 +120,7 @@ export default function VideoHero({ locale = "en" }: VideoHeroProps) {
             <div className="mt-10 grid max-w-2xl grid-cols-1 gap-4 text-sm md:grid-cols-3">
               <div className="rounded-lg border border-[#E5E7EB] bg-white p-4 shadow-soft">
                 <div className="text-[#6B7280]">{isEs ? "Aplicaciones por vacante" : "Applications per opening"}</div>
-                <div className="tabular mt-1 text-xl font-semibold text-black">+<span data-counter>0</span></div>
+                <div className="tabular mt-1 text-xl font-semibold text-black">+<span data-counter>250</span></div>
               </div>
               <div className="rounded-lg border border-[#E5E7EB] bg-white p-4 shadow-soft">
                 <div className="text-[#6B7280]">{isEs ? "Base de talento" : "Talent network"}</div>
